@@ -57,26 +57,7 @@ static void convertSeeds(std::vector<CAddress> &vSeedsOut, const unsigned int *d
 static void getHardcodedSeeds(std::vector<CAddress> &vSeedsOut)
 {
     std::vector<std::string> ips;
-    ips.push_back("45.77.103.39");
-    ips.push_back("149.28.61.137");
-    ips.push_back("207.148.29.157");
-    ips.push_back("45.32.1.154");
-    ips.push_back("149.28.55.16");
-    ips.push_back("149.28.48.108");
-    ips.push_back("45.77.156.56");
-    ips.push_back("149.28.225.249");
-    ips.push_back("149.28.59.79");
-    ips.push_back("45.77.159.63");
-    ips.push_back("45.77.152.136");
-    ips.push_back("64.154.38.191");
-    ips.push_back("149.28.52.83");
-    ips.push_back("8.9.36.42");
-    ips.push_back("45.77.207.90");
-    ips.push_back("140.82.11.159");
-    ips.push_back("149.28.230.142");
-    ips.push_back("8.9.8.80");
-    ips.push_back("149.28.236.185");
-    ips.push_back("207.148.28.187");
+    //ips.push_back("45.77.103.39");
 
     const int64_t oneWeek = 7 * 24 * 60 * 60;
     for (size_t i = 0; i < ips.size(); ++i)
@@ -136,29 +117,8 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x99)(0x75)(0x45)(0xE2).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x99)(0x73)(0x43)(0xE3).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("1",  "45.77.103.39"));
-        vSeeds.push_back(CDNSSeedData("2",  "149.28.61.137"));
-        vSeeds.push_back(CDNSSeedData("3",  "207.148.29.157"));
-        vSeeds.push_back(CDNSSeedData("4",  "45.32.1.154"));
-        vSeeds.push_back(CDNSSeedData("5",  "149.28.55.16"));
-        vSeeds.push_back(CDNSSeedData("6",  "149.28.48.108"));
-        vSeeds.push_back(CDNSSeedData("7",  "45.77.156.56"));
-        vSeeds.push_back(CDNSSeedData("8",  "149.28.225.249"));
-        vSeeds.push_back(CDNSSeedData("9",  "149.28.59.79"));
-        vSeeds.push_back(CDNSSeedData("10",  "45.77.159.63"));
-        vSeeds.push_back(CDNSSeedData("11",  "45.77.152.136"));
-        vSeeds.push_back(CDNSSeedData("12",  "64.154.38.191"));
-        vSeeds.push_back(CDNSSeedData("13",  "149.28.52.83"));
-        vSeeds.push_back(CDNSSeedData("14",  "8.9.36.42"));
-        vSeeds.push_back(CDNSSeedData("15",  "45.77.207.90"));
-        vSeeds.push_back(CDNSSeedData("16",  "140.82.11.159"));
-        vSeeds.push_back(CDNSSeedData("17",  "149.28.230.142"));
-        vSeeds.push_back(CDNSSeedData("18",  "8.9.8.80"));
-        vSeeds.push_back(CDNSSeedData("19",  "149.28.236.185"));
-        vSeeds.push_back(CDNSSeedData("20",  "207.148.28.187"));
-
-	convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
-
+        //vSeeds.push_back(CDNSSeedData("1",  "45.77.103.39"));
+	      convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
         getHardcodedSeeds(vFixedSeeds);
 
         nPoolMaxTransactions = 3;
