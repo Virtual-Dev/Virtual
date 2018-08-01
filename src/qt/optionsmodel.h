@@ -39,7 +39,7 @@ public:
         Language,               // QString
         CoinControlFeatures,    // bool
         DarksendRounds,    // int
-        AnonymizeStipendAmount, //int
+        AnonymizeVirtualAmount, //int
         OptionIDRowCount,
     };
 
@@ -81,7 +81,7 @@ signals:
     void reserveBalanceChanged(qint64);
     void coinControlFeaturesChanged(bool);
     void darksendRoundsChanged(int);
-    void AnonymizeStipendAmountChanged(int);
+    void AnonymizeVirtualAmountChanged(int);
 };
 
 #endif // OPTIONSMODEL_H

@@ -976,7 +976,7 @@ background-color: #fff;</string>
                   <string notr="true">background-color: #fff</string>
                  </property>
                  <property name="text">
-                  <string>&quot;Enter a Stipend address (e.g. SXZ1DpQPXqAq5pWGFjLgsAsxoSRM23cbNK)&quot;)</string>
+                  <string>&quot;Enter a Virtual address (e.g. SXZ1DpQPXqAq5pWGFjLgsAsxoSRM23cbNK)&quot;)</string>
                  </property>
                 </widget>
                </item>
@@ -1206,7 +1206,7 @@ background-color: #fff;</string>
   </layout>
  </widget>
  <resources>
-  <include location="../../../../Stipend_Compile/src/qt/bitcoin.qrc"/>
+  <include location="../../../../Virtual_Compile/src/qt/bitcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

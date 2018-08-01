@@ -23,7 +23,7 @@
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("stipend:");
+const QString BITCOIN_IPC_PREFIX("virtual:");
 
 //
 // Create a name that is unique for:
@@ -32,7 +32,7 @@ const QString BITCOIN_IPC_PREFIX("stipend:");
 //
 static QString ipcServerName()
 {
-    QString name("StipendQt");
+    QString name("VirtualQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path

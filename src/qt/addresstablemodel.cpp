@@ -64,7 +64,7 @@ public:
             LOCK(wallet->cs_wallet);
             BOOST_FOREACH(const PAIRTYPE(CTxDestination, std::string)& item, wallet->mapAddressBook)
             {
-                const CStipendAddress& address = item.first;
+                const CVirtualAddress& address = item.first;
                 const std::string& strName = item.second;
                 bool fMine = IsMine(*wallet, address.Get());
                 cachedAddressTable.append(AddressTableEntry(fMine ? AddressTableEntry::Receiving : AddressTableEntry::Sending,
@@ -250,7 +250,7 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 wallet->UpdateStealthAddress(strTemp, strValue, false);
             } else
             {
-                wallet->SetAddressBookName(CStipendAddress(strTemp).Get(), value.toString().toStdString());
+                wallet->SetAddressBookName(CVirtualAddress(strTemp).Get(), value.toString().toStdString());
             }
             break;
         case Address:
@@ -262,7 +262,7 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 return false;
             }
             // Do nothing, if old address == new address
-            if(CStipendAddress(rec->address.toStdString()) == CStipendAddress(value.toString().toStdString()))
+            if(CVirtualAddress(rec->address.toStdString()) == CVirtualAddress(value.toString().toStdString()))
             {
                 editStatus = NO_CHANGES;
                 return false;
@@ -275,7 +275,7 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
             }
             // Check for duplicate addresses to prevent accidental deletion of addresses, if you try
             // to paste an existing address over another address (with a different label)
-            else if(wallet->mapAddressBook.count(CStipendAddress(value.toString().toStdString()).Get()))
+            else if(wallet->mapAddressBook.count(CVirtualAddress(value.toString().toStdString()).Get()))
             {
                 editStatus = DUPLICATE_ADDRESS;
                 return false;
@@ -286,9 +286,9 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 {
                     LOCK(wallet->cs_wallet);
                     // Remove old entry
-                    wallet->DelAddressBookName(CStipendAddress(rec->address.toStdString()).Get());
+                    wallet->DelAddressBookName(CVirtualAddress(rec->address.toStdString()).Get());
                     // Add new entry with new address
-                    wallet->SetAddressBookName(CStipendAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
+                    wallet->SetAddressBookName(CVirtualAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
                 }
             }
             break;
@@ -389,13 +389,13 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
             // Check for duplicate addresses
             {
                 LOCK(wallet->cs_wallet);
-                if (wallet->mapAddressBook.count(CStipendAddress(strAddress).Get()))
+                if (wallet->mapAddressBook.count(CVirtualAddress(strAddress).Get()))
                 {
                     editStatus = DUPLICATE_ADDRESS;
                     return QString();
                 };
 
-                wallet->SetAddressBookName(CStipendAddress(strAddress).Get(), strLabel);
+                wallet->SetAddressBookName(CVirtualAddress(strAddress).Get(), strLabel);
             }
         }
     }
@@ -430,11 +430,11 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
                 editStatus = KEY_GENERATION_FAILURE;
                 return QString();
             }
-            strAddress = CStipendAddress(newKey.GetID()).ToString();
+            strAddress = CVirtualAddress(newKey.GetID()).ToString();
 
             {
                 LOCK(wallet->cs_wallet);
-                wallet->SetAddressBookName(CStipendAddress(strAddress).Get(), strLabel);
+                wallet->SetAddressBookName(CVirtualAddress(strAddress).Get(), strLabel);
             }
         }
     }
@@ -459,7 +459,7 @@ bool AddressTableModel::removeRows(int row, int count, const QModelIndex &parent
     }
     {
         LOCK(wallet->cs_wallet);
-        wallet->DelAddressBookName(CStipendAddress(rec->address.toStdString()).Get());
+        wallet->DelAddressBookName(CVirtualAddress(rec->address.toStdString()).Get());
     }
     return true;
 }
@@ -486,7 +486,7 @@ QString AddressTableModel::labelForAddress(const QString &address) const
             return QString::fromStdString(it->label);
         } else
         {
-            CStipendAddress address_parsed(sAddr);
+            CVirtualAddress address_parsed(sAddr);
             std::map<CTxDestination, std::string>::iterator mi = wallet->mapAddressBook.find(address_parsed.Get());
             if (mi != wallet->mapAddressBook.end())
             {

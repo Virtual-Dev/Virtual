@@ -70,7 +70,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 ----------------------------------------------------------------------------------------------------------
 
-If you want to build Stipend-Qt, make sure that the required packages for Qt development
+If you want to build Virtual-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used.
 
@@ -82,7 +82,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a stipend-qt executable will be
+Once these are installed, they will be found by configure and a virtual-qt executable will be
 built by default.
 
 Berkeley DB
@@ -90,10 +90,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-STIPEND_ROOT=$(pwd)
+VIRTUAL_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the stipend directory
-BDB_PREFIX="${STIPEND_ROOT}/db4"
+# Pick some path to install BDB to, here we create a directory within the virtual directory
+BDB_PREFIX="${VIRTUAL_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -108,8 +108,8 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure Stipend Core to use our own-built instance of BDB
-cd $STIPEND_ROOT
+# Configure Virtual Core to use our own-built instance of BDB
+cd $VIRTUAL_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
@@ -118,21 +118,21 @@ Notes
 -----
 1) You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-2) The release is built with GCC and then "strip stipendd" to strip the debug
+2) The release is built with GCC and then "strip virtuald" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
-To Build Stipendd with compile script
+To Build Virtuald with compile script
 ---------------------
 
 The script will take care of setting the permissions and compiling static leveldb:
 
-	cd Stipend
+	cd Virtual
     chmod +x compile.sh
     ./compile.sh
 
 
-To Build Stipendd
+To Build Virtuald
 ---------------------
 
 Make sure the scripts have execute permissions:
@@ -149,26 +149,26 @@ Build LevelDB static libs first:
 With UPNP:
 
     make -f makefile.unix
-    strip stipendd
+    strip virtuald
 
 Without UPNP (Recommended) :
 
     make -f makefile.unix USE_UPNP=
-    strip stipendd
+    strip virtuald
 
 
-To Build Stipendd with compile script
+To Build Virtuald with compile script
 ---------------------
 
 The script will take care of setting the permissions and compiling static leveldb:
 
-	cd Stipend
+	cd Virtual
     chmod +x compile-qt.sh
     ./compile-qt.sh
 
 
 
-To Build Stipend-QT
+To Build Virtual-QT
 ---------------------
 
 Build LevelDB static libs first (check for file permissions in case of error)
@@ -206,7 +206,7 @@ If you need to build miniupnpc yourself:
 
 Security
 ---------------------
-To help make your stipend installation more secure by making certain attacks impossible to
+To help make your virtual installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, you can take the following measures:
 
 * Position Independent Executable
@@ -223,7 +223,7 @@ exploit even if a vulnerability is found, you can take the following measures:
     make -f makefile.unix ... -e PIE=1
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
-    scanelf -e ./stipend
+    scanelf -e ./virtual
 
     The output should contain:
      TYPE
@@ -231,13 +231,13 @@ exploit even if a vulnerability is found, you can take the following measures:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, stipend should be built with a non-executable stack
+    vulnerable buffers are found. By default, virtual should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    scanelf -e ./stipend
+    scanelf -e ./virtual
 
     the output should contain:
     STK/REL/PTL
@@ -249,7 +249,7 @@ exploit even if a vulnerability is found, you can take the following measures:
 Example of Configuration file
 ---------------------
 
-	rpcuser=stipendd
+	rpcuser=virtuald
 	rpcpassword=vejktejklungwerklcgerkum
 	rpcport=46979
 	rpcallowip=127.0.0.1

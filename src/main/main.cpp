@@ -96,7 +96,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Stipend Signed Message:\n";
+const string strMessageMagic = "Virtual Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
@@ -2139,7 +2139,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
             CTxDestination address1;
             ExtractDestination(payeeByVal, address1);
-            CStipendAddress address2(address1);
+            CVirtualAddress address2(address1);
             std::string strAddr = address2.ToString();
             uint256 hash4;
             SHA256((unsigned char*)strAddr.c_str(), strAddr.length(), (unsigned char*)&hash4);
@@ -2210,7 +2210,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             if (fDebug) {
                 CTxDestination address1;
                 ExtractDestination(payee, address1);
-                CStipendAddress address2(address1);
+                CVirtualAddress address2(address1);
                 LogPrintf("ConnectBlock() : Couldn't find masternode payment(%d|%d) or payee(%d|%s) nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), pindex->nHeight);
             }
 
@@ -2783,7 +2783,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
 
                     CTxDestination address1;
                     ExtractDestination(payee, address1);
-                    CStipendAddress address2(address1);
+                    CVirtualAddress address2(address1);
 
                     if(!foundPaymentAndPayee) {
                         if(fDebug) { LogPrintf("CheckBlock() : Couldn't find masternode payment(%d|%d) or payee(%d|%s) nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), pindexBest->nHeight+1); }
@@ -3495,7 +3495,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("stipend-loadblk");
+    RenameThread("virtual-loadblk");
 
     CImportingNow imp;
 

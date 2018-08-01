@@ -577,7 +577,7 @@ bool CMasternodeMan::IsMNReal(std::string strMNAddr)
         pubkey.SetDestination(mn.pubkey.GetID());
         CTxDestination address1;
         ExtractDestination(pubkey, address1);
-        CStipendAddress address2(address1);
+        CVirtualAddress address2(address1);
         std::string strMNDBAddr;
         strMNDBAddr = address2.ToString();
         if (strMNAddr == strMNDBAddr)
@@ -810,7 +810,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(hashBlock);
            if (mi != mapBlockIndex.end() && (*mi).second)
             {
-                CBlockIndex* pMNIndex = (*mi).second; // block for 5000 Stipend tx -> 1 confirmation
+                CBlockIndex* pMNIndex = (*mi).second; // block for 5000 Virtual tx -> 1 confirmation
                 CBlockIndex* pConfIndex = FindBlockByHeight((pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1)); // block where tx got MASTERNODE_MIN_CONFIRMATIONS
                 if(pConfIndex->GetBlockTime() > sigTime)
                 {

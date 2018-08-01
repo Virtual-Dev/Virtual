@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Stipend</source>
-        <translation>Om Stipend</translation>
+        <source>About Virtual</source>
+        <translation>Om Virtual</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Stipend&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Stipend&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;Virtual&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Virtual&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Stipend developers</source>
+Copyright © 2014 The Virtual developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Stipend developers</translation>
+Copyright © 2014 The Virtual developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,7 +60,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Stipend addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Virtual addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Dette er adressene for å motta betalinger. Du ønsker kanskje å gi ulike adresser til hver avsender så du lettere kan holde øye med hvem som betaler deg.</translation>
     </message>
     <message>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Stipend address</source>
-        <translation>Signer en melding for å bevise din egen Stipend adresse.</translation>
+        <source>Sign a message to prove you own a Virtual address</source>
+        <translation>Signer en melding for å bevise din egen Virtual adresse.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Stipend address</source>
-        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk Stipend adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified Virtual address</source>
+        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk Virtual adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,7 +258,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Stipend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>Virtual will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Stipend</source>
-        <translation>Vis info om Stipend</translation>
+        <source>Show information about Virtual</source>
+        <translation>Vis info om Virtual</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Stipend address</source>
-        <translation>Send coins til en Stipend adresse</translation>
+        <source>Send coins to a Virtual address</source>
+        <translation>Send coins til en Virtual adresse</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Stipend</source>
-        <translation>Endre innstillingene til Stipend</translation>
+        <source>Modify configuration options for Virtual</source>
+        <translation>Endre innstillingene til Virtual</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Stipend</source>
-        <translation>Stipend</translation>
+        <source>Virtual</source>
+        <translation>Virtual</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Stipend</source>
-        <translation>&amp;Om Stipend</translation>
+        <source>&amp;About Virtual</source>
+        <translation>&amp;Om Virtual</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Stipend client</source>
-        <translation>Stipend klient</translation>
+        <source>Virtual client</source>
+        <translation>Virtual klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Stipend network</source>
-        <translation><numerusform>%n aktiv tilkobling til Stipend nettverket</numerusform><numerusform>%n aktive tilkoblinger til Stipend nettverket</numerusform></translation>
+        <source>%n active connection(s) to Virtual network</source>
+        <translation><numerusform>%n aktiv tilkobling til Virtual nettverket</numerusform><numerusform>%n aktive tilkoblinger til Virtual nettverket</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,7 +600,7 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Stipend address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Virtual address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -723,7 +723,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Stipend can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Virtual can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1045,8 +1045,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Stipend address.</source>
-        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig Stipend adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Virtual address.</source>
+        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig Virtual adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1064,8 +1064,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Stipend-Qt</source>
-        <translation>Stipend-Qt</translation>
+        <source>Virtual-Qt</source>
+        <translation>Virtual-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1137,13 +1137,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Stipend after logging in to the system.</source>
-        <translation>Start Stipend automatisk ved hver innlogging.</translation>
+        <source>Automatically start Virtual after logging in to the system.</source>
+        <translation>Start Virtual automatisk ved hver innlogging.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Stipend on system login</source>
-        <translation>&amp;Start Stipend ved innlogging</translation>
+        <source>&amp;Start Virtual on system login</source>
+        <translation>&amp;Start Virtual ved innlogging</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1152,7 +1152,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Stipend client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Virtual client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1162,7 +1162,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Stipend network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Virtual network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stipend.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Virtual.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1248,7 +1248,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av stipends.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av virtuals.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1304,8 +1304,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Stipend.</source>
-        <translation>Denne innstillingen vil tre i kraft etter Stipend er blitt startet på nytt.</translation>
+        <source>This setting will take effect after restarting Virtual.</source>
+        <translation>Denne innstillingen vil tre i kraft etter Virtual er blitt startet på nytt.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1323,7 +1323,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stipend network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Virtual network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1565,7 +1565,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Stipend-Qt help message to get a list with possible Stipend command-line options.</source>
+        <source>Show the Virtual-Qt help message to get a list with possible Virtual command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1585,12 +1585,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Stipend - Debug window</source>
+        <source>Virtual - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>Stipend Core</source>
+        <source>Virtual Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1600,7 +1600,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Stipend debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Virtual debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1610,7 +1610,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Stipend RPC console.</source>
+        <source>Welcome to the Virtual RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1671,7 +1671,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Stipends</translation>
+        <translation>Send Virtuals</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1804,7 +1804,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1904,8 +1904,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Stipend address</source>
-        <translation>ADVARSEL: Ugyldig Stipend adresse</translation>
+        <source>WARNING: Invalid Virtual address</source>
+        <translation>ADVARSEL: Ugyldig Virtual adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1978,7 +1978,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2039,7 +2039,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Stipend address</source>
+        <source>Sign the message to prove you own this Virtual address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2071,7 +2071,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Stipend address</source>
+        <source>Verify the message to ensure it was signed with the specified Virtual address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2082,7 +2082,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2092,8 +2092,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Stipend signature</source>
-        <translation>Skriv inn Stipend signatur</translation>
+        <source>Enter Virtual signature</source>
+        <translation>Skriv inn Virtual signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2671,8 +2671,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>Stipend version</source>
-        <translation>Stipend versjon</translation>
+        <source>Virtual version</source>
+        <translation>Virtual versjon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2681,7 +2681,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or stipendd</source>
+        <source>Send command to -server or virtuald</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2701,12 +2701,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: stipend.conf)</source>
+        <source>Specify configuration file (default: virtual.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: stipendd.pid)</source>
+        <source>Specify pid file (default: virtuald.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2724,13 +2724,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=stipendrpc
+rpcuser=virtualrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Virtual Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2836,7 +2836,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stipend will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Virtual will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3142,7 +3142,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Stipend is shutting down.</source>
+        <source>Initialization sanity check failed. Virtual is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3207,12 +3207,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Stipend</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Virtual</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Stipend to complete</source>
+        <source>Wallet needed to be rewritten: restart Virtual to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3277,7 +3277,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. Stipend is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Virtual is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3317,7 +3317,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Stipend is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Virtual is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

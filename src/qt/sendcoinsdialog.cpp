@@ -558,7 +558,7 @@ bool SendCoinsDialog::handleURI(const QString &uri)
     // URI has to be valid
     if (GUIUtil::parseBitcoinURI(uri, &rv))
     {
-        CStipendAddress address(rv.address.toStdString());
+        CVirtualAddress address(rv.address.toStdString());
         if (!address.IsValid())
             return false;
         pasteEntry(rv);
@@ -898,7 +898,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         CoinControlDialog::coinControl->destChange = CNoDestination();
         ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
 
-        CStipendAddress addr = CStipendAddress(text.toStdString());
+        CVirtualAddress addr = CVirtualAddress(text.toStdString());
 
         if (text.isEmpty()) // Nothing entered
         {
@@ -906,7 +906,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Stipend address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Virtual address"));
         }
         else // Valid address
         {

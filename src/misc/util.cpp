@@ -78,7 +78,7 @@ bool fLiteMode = false;
 bool fEnableInstantX = true;
 int nInstantXDepth = 10;
 int nDarksendRounds = 2;
-int nAnonymizeStipendAmount = 1000;
+int nAnonymizeVirtualAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -1043,7 +1043,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "stipend";
+    const char* pszModule = "virtual";
 #endif
     if (pex)
         return strprintf(
@@ -1073,13 +1073,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Stipend
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Stipend
-    // Mac: ~/Library/Application Support/Stipend
-    // Unix: ~/.stipend
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Virtual
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Virtual
+    // Mac: ~/Library/Application Support/Virtual
+    // Unix: ~/.virtual
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Stipend";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Virtual";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1091,10 +1091,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Stipend";
+    return pathRet / "Virtual";
 #else
     // Unix
-    return pathRet / ".stipend";
+    return pathRet / ".virtual";
 #endif
 #endif
 }
@@ -1143,7 +1143,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "stipend.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "virtual.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1188,7 +1188,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "stipendd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "virtuald.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -1349,7 +1349,7 @@ void AddTimeData(const CNetAddr& ip, int64_t nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong STIPEND will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong VIRTUAL will not work properly.");
                     strMiscWarning = strMessage;
                     LogPrintf("*** %s\n", strMessage);
                     uiInterface.ThreadSafeMessageBox(strMessage, "", CClientUIInterface::MSG_WARNING);

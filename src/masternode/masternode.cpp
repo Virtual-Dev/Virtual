@@ -178,7 +178,7 @@ uint256 CMasternode::CalculateScore(int mod, int64_t nBlockHeight)
     pubkeyWork.SetDestination(pubkey.GetID());
     CTxDestination address1;
     ExtractDestination(pubkeyWork, address1);
-    CStipendAddress address2(address1);
+    CVirtualAddress address2(address1);
     std::string strAddr = address2.ToString();
     uint256 hash4;
     SHA256((unsigned char*)strAddr.c_str(), strAddr.length(), (unsigned char*)&hash4);

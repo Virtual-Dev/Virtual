@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Let's compile compile Stipend GUI wallet
+# Let's compile compile Virtual GUI wallet
 
 chmod 755 src/leveldb/build_detect_platform
 chmod 755 src/secp256k1/autogen.sh

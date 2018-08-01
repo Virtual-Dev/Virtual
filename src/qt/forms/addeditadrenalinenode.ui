@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Add/Edit Stipend Node</string>
+   <string>Add/Edit Virtual Node</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #eaeaea</string>

@@ -57,7 +57,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 {
                     // Received by Bitcoin Address
                     sub.type = TransactionRecord::RecvWithAddress;
-                    sub.address = CStipendAddress(address).ToString();
+                    sub.address = CVirtualAddress(address).ToString();
                 }
                 else
                 {
@@ -146,7 +146,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 if (ExtractDestination(wtx.vout[0].scriptPubKey, address))
                 {
                     // Sent to Dash Address
-                    sub.address = CStipendAddress(address).ToString();
+                    sub.address = CVirtualAddress(address).ToString();
                 }
                 else
                 {
@@ -201,7 +201,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 {
                     // Sent to Bitcoin Address
                     sub.type = TransactionRecord::SendToAddress;
-                    sub.address = CStipendAddress(address).ToString();
+                    sub.address = CVirtualAddress(address).ToString();
                 }
                 else
                 {

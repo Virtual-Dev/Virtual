@@ -166,7 +166,7 @@ public:
 
 
 // -- get at the data
-class CStipendAddress_B : public CStipendAddress
+class CVirtualAddress_B : public CVirtualAddress
 {
 public:
     uint8_t getVersion()

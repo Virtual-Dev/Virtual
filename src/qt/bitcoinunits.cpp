@@ -52,9 +52,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Stipends");
-    case mBTC: return QString("Milli-Stipends (1 / 1,000)");
-    case uBTC: return QString("Micro-Stipends (1 / 1,000,000)");
+    case BTC: return QString("Virtuals");
+    case mBTC: return QString("Milli-Virtuals (1 / 1,000)");
+    case uBTC: return QString("Micro-Virtuals (1 / 1,000,000)");
     default: return QString("???");
     }
 }

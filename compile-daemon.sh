@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Let's compile Stipend daemon
+# Let's compile Virtual daemon
 
 
 chmod 755 src/leveldb/build_detect_platform
@@ -9,4 +9,4 @@ cd src/leveldb
 make libleveldb.a libmemenv.a
 cd ..
 make -f makefile.unix
-strip stipendd
+strip virtuald

@@ -5,17 +5,17 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Stipend</source>
-        <translation>About Stipend</translation>
+        <source>About Virtual</source>
+        <translation>About Virtual</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Stipend&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Stipend&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Virtual&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Virtual&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright (c) 2017-2018 Stipend Developers
+        <source>Copyright (c) 2017-2018 Virtual Developers
 Copyright (c) 2014-2015 Dash Developers
 Copyright (c) 2011-2012 PPCoin Developers
 Copyright (c) 2009-2014 Bitcoin Developers</source>
@@ -61,8 +61,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Stipend addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Stipend addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Virtual addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Virtual addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -76,8 +76,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Stipend address</source>
-        <translation>Sign a message to prove you own a Stipend address</translation>
+        <source>Sign a message to prove you own a Virtual address</source>
+        <translation>Sign a message to prove you own a Virtual address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -91,8 +91,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Stipend address</source>
-        <translation>Verify a message to ensure it was signed with a specified Stipend address</translation>
+        <source>Verify a message to ensure it was signed with a specified Virtual address</source>
+        <translation>Verify a message to ensure it was signed with a specified Virtual address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -259,8 +259,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Stipend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Stipend will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
+        <source>Virtual will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Virtual will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -353,8 +353,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Stipend</source>
-        <translation>Show information about Stipend</translation>
+        <source>Show information about Virtual</source>
+        <translation>Show information about Virtual</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -393,13 +393,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Stipend address</source>
-        <translation>Send coins to a Stipend address</translation>
+        <source>Send coins to a Virtual address</source>
+        <translation>Send coins to a Virtual address</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Stipend</source>
-        <translation>Modify configuration options for Stipend</translation>
+        <source>Modify configuration options for Virtual</source>
+        <translation>Modify configuration options for Virtual</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -439,8 +439,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Stipend</source>
-        <translation>Stipend</translation>
+        <source>Virtual</source>
+        <translation>Virtual</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -449,8 +449,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Stipend</source>
-        <translation>&amp;About Stipend</translation>
+        <source>&amp;About Virtual</source>
+        <translation>&amp;About Virtual</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,15 +501,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Stipend client</source>
-        <translation>Stipend client</translation>
+        <source>Virtual client</source>
+        <translation>Virtual client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Stipend network</source>
+        <source>%n active connection(s) to Virtual network</source>
         <translation>
-            <numerusform>%n active connection to Stipend network</numerusform>
-            <numerusform>%n active connections to Stipend network</numerusform>
+            <numerusform>%n active connection to Virtual network</numerusform>
+            <numerusform>%n active connections to Virtual network</numerusform>
         </translation>
     </message>
     <message>
@@ -604,8 +604,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Stipend address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Stipend address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Virtual address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Virtual address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -745,8 +745,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Stipend can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Stipend can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Virtual can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Virtual can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -1065,8 +1065,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Stipend address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Stipend address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Virtual address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Virtual address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1084,8 +1084,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Stipend-Qt</source>
-        <translation>Stipend-Qt</translation>
+        <source>Virtual-Qt</source>
+        <translation>Virtual-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1157,13 +1157,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Stipend after logging in to the system.</source>
-        <translation>Automatically start Stipend after logging in to the system.</translation>
+        <source>Automatically start Virtual after logging in to the system.</source>
+        <translation>Automatically start Virtual after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Stipend on system login</source>
-        <translation>&amp;Start Stipend on system login</translation>
+        <source>&amp;Start Virtual on system login</source>
+        <translation>&amp;Start Virtual on system login</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1172,8 +1172,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Stipend client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Stipend client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Virtual client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Virtual client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1182,8 +1182,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Stipend network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Stipend network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Virtual network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Virtual network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1257,8 +1257,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stipend.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Stipend.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Virtual.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Virtual.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1324,8 +1324,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Stipend.</source>
-        <translation>This setting will take effect after restarting Stipend.</translation>
+        <source>This setting will take effect after restarting Virtual.</source>
+        <translation>This setting will take effect after restarting Virtual.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1343,8 +1343,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stipend network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Stipend network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Virtual network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Virtual network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1585,8 +1585,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Stipend-Qt help message to get a list with possible Stipend command-line options.</source>
-        <translation>Show the Stipend-Qt help message to get a list with possible Stipend command-line options.</translation>
+        <source>Show the Virtual-Qt help message to get a list with possible Virtual command-line options.</source>
+        <translation>Show the Virtual-Qt help message to get a list with possible Virtual command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1605,13 +1605,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>Stipend - Debug window</source>
-        <translation>Stipend - Debug window</translation>
+        <source>Virtual - Debug window</source>
+        <translation>Virtual - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Stipend Core</source>
-        <translation>Stipend Core</translation>
+        <source>Virtual Core</source>
+        <translation>Virtual Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1620,8 +1620,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Stipend debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Stipend debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Virtual debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Virtual debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1630,8 +1630,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Stipend RPC console.</source>
-        <translation>Welcome to the Stipend RPC console.</translation>
+        <source>Welcome to the Virtual RPC console.</source>
+        <translation>Welcome to the Virtual RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1824,8 +1824,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1924,7 +1924,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Stipend address</source>
+        <source>WARNING: Invalid Virtual address</source>
         <translation></translation>
     </message>
     <message>
@@ -1998,8 +1998,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2059,8 +2059,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Stipend address</source>
-        <translation>Sign the message to prove you own this Stipend address</translation>
+        <source>Sign the message to prove you own this Virtual address</source>
+        <translation>Sign the message to prove you own this Virtual address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2091,8 +2091,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Stipend address</source>
-        <translation>Verify the message to ensure it was signed with the specified Stipend address</translation>
+        <source>Verify the message to ensure it was signed with the specified Virtual address</source>
+        <translation>Verify the message to ensure it was signed with the specified Virtual address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2102,8 +2102,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a Stipend address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Virtual address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2112,8 +2112,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Stipend signature</source>
-        <translation>Enter Stipend signature</translation>
+        <source>Enter Virtual signature</source>
+        <translation>Enter Virtual signature</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2703,8 +2703,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+172"/>
-        <source>Stipend version</source>
-        <translation>Stipend version</translation>
+        <source>Virtual version</source>
+        <translation>Virtual version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,8 +2713,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or stipendd</source>
-        <translation>Send command to -server or stipendd</translation>
+        <source>Send command to -server or virtuald</source>
+        <translation>Send command to -server or virtuald</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2733,13 +2733,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: stipend.conf)</source>
-        <translation>Specify configuration file (default: stipend.conf)</translation>
+        <source>Specify configuration file (default: virtual.conf)</source>
+        <translation>Specify configuration file (default: virtual.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: stipendd.pid)</source>
-        <translation>Specify pid file (default: stipendd.pid)</translation>
+        <source>Specify pid file (default: virtuald.pid)</source>
+        <translation>Specify pid file (default: virtuald.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2756,13 +2756,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=stipendrpc
+rpcuser=virtualrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Virtual Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -2868,8 +2868,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-102"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stipend will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stipend will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Virtual will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Virtual will not work properly.</translation>
     </message>
     <message>
         <location line="+131"/>
@@ -3169,7 +3169,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Stipend is shutting down.</source>
+        <source>Initialization sanity check failed. Virtual is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3234,13 +3234,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Stipend</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Stipend</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Virtual</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Virtual</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Stipend to complete</source>
-        <translation>Wallet needed to be rewritten: restart Stipend to complete</translation>
+        <source>Wallet needed to be rewritten: restart Virtual to complete</source>
+        <translation>Wallet needed to be rewritten: restart Virtual to complete</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3304,8 +3304,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. Stipend is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Stipend is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Virtual is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Virtual is probably already running.</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3344,7 +3344,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stipend Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Stipend is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Virtual is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

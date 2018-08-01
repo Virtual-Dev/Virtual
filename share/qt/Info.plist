@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Stipend-Qt</string>
+	<string>Virtual-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Stipend-Qt</string>
+	<string>Virtual-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.stipend.Stipend-Qt</string>
+	<string>co.virtual.Virtual-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.stipend.StipendPayment</string>
+            <string>co.virtual.VirtualPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>stipend</string>
+              <string>virtual</string>
             </array>
           </dict>
         </array>

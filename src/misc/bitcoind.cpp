@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Stipend version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Virtual version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  stipendd [options]                     " + "\n" +
-                  "  stipendd [options] <command> [params]  " + _("Send command to -server or stipendd") + "\n" +
-                  "  stipendd [options] help                " + _("List commands") + "\n" +
-                  "  stipendd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  virtuald [options]                     " + "\n" +
+                  "  virtuald [options] <command> [params]  " + _("Send command to -server or virtuald") + "\n" +
+                  "  virtuald [options] help                " + _("List commands") + "\n" +
+                  "  virtuald [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "stipend:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "virtual:"))
                 fCommandLine = true;
 
         if (fCommandLine)

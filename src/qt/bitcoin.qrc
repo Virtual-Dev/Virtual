@@ -1,11 +1,11 @@
 <RCC>
     <qresource prefix="/icons">
-        <file alias="bitcoin">res/icons/stipend-26.png</file>
-        <file alias="logo">res/icons/stipend-48.png</file>
+        <file alias="bitcoin">res/icons/virtual-26.png</file>
+        <file alias="logo">res/icons/virtual-48.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
         <file alias="quit">res/icons/quit.png</file>
         <file alias="send">res/icons/send.png</file>
-        <file alias="toolbar">res/icons/stipend-16.png</file>
+        <file alias="toolbar">res/icons/virtual-16.png</file>
         <file alias="connect_0">res/icons/connect0_16.png</file>
         <file alias="connect_1">res/icons/connect1_16.png</file>
         <file alias="connect_2">res/icons/connect2_16.png</file>
@@ -27,8 +27,8 @@
         <file alias="editpaste">res/icons/editpaste.png</file>
         <file alias="editcopy">res/icons/editcopy.png</file>
         <file alias="add">res/icons/add.png</file>
-        <file alias="bitcoin_testnet">res/icons/stipend-80.png</file>
-        <file alias="toolbar_testnet">res/icons/stipend-16.png</file>
+        <file alias="bitcoin_testnet">res/icons/virtual-80.png</file>
+        <file alias="toolbar_testnet">res/icons/virtual-16.png</file>
         <file alias="edit">res/icons/edit.png</file>
         <file alias="history">res/icons/history.png</file>
         <file alias="overview">res/icons/overview.png</file>
@@ -53,7 +53,7 @@
         <file alias="browse">res/icons/browse.png</file>
         <file alias="trade">res/icons/trade.png</file>
         <file alias="changepass">res/icons/changepass.png</file>
-        <file alias="aboutstipend">res/icons/aboutstipend.png</file>
+        <file alias="aboutvirtual">res/icons/aboutvirtual.png</file>
         <file alias="menuexit">res/icons/menuexit.png</file>
         <file alias="signmsg">res/icons/signmsg.png</file>
         <file alias="verifmsg">res/icons/verifmsg.png</file>

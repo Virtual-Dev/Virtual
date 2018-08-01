@@ -2,10 +2,10 @@
 ## [Join us on Discord](https://discord.gg/3Bjhz4k)
 
 
-# The Stipend
+# The Virtual
 
-We introduce you a new cryptocoin called Stipend.
-Stipend is a safe, anonymous, fast and highly profitable coin with Masternodes and advanced reward system with Long-Term Development & Support.
+We introduce you a new cryptocoin called Virtual.
+Virtual is a safe, anonymous, fast and highly profitable coin with Masternodes and advanced reward system with Long-Term Development & Support.
 Welcome to the future!
 
 ## Main Features:
@@ -53,5 +53,5 @@ Welcome to the future!
 
 ###### License
 
-Stipend is released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
+Virtual is released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
 

@@ -256,7 +256,7 @@ void MasternodeManager::on_UpdateButton_clicked()
 
         getLastMasternodeError(mne.getTxHash() +  mne.getOutputIndex(), errorMessage);
 
-        // If an error is available we use it. Otherwise we print the update text as we are searching for the MN in the Stipend network.
+        // If an error is available we use it. Otherwise we print the update text as we are searching for the MN in the Virtual network.
         if (errorMessage == ""){
             updateAdrenalineNode(QString::fromStdString(mne.getAlias()), QString::fromStdString(mne.getIp()), QString::fromStdString(mne.getPrivKey()), QString::fromStdString(mne.getTxHash()),
                 QString::fromStdString(mne.getOutputIndex()), QString::fromStdString(strDonateAddress), QString::fromStdString(strDonationPercentage), QString::fromStdString("Updating Network List."));

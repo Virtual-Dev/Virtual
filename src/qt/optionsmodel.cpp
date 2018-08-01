@@ -62,13 +62,13 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    if (!settings.contains("nAnonymizeStipendAmount"))
-        settings.setValue("nAnonymizeStipendAmount", 1000);
-    nAnonymizeStipendAmount = settings.value("nAnonymizeStipendAmount").toLongLong();
+    if (!settings.contains("nAnonymizeVirtualAmount"))
+        settings.setValue("nAnonymizeVirtualAmount", 1000);
+    nAnonymizeVirtualAmount = settings.value("nAnonymizeVirtualAmount").toLongLong();
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeStipendAmount"))
-        SoftSetArg("-anonymizestipendamount", settings.value("nAnonymizeStipendAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeVirtualAmount"))
+        SoftSetArg("-anonymizevirtualamount", settings.value("nAnonymizeVirtualAmount").toString().toStdString());
 
 
 
@@ -202,8 +202,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return fCoinControlFeatures;
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeStipendAmount:
-            return QVariant(nAnonymizeStipendAmount);
+        case AnonymizeVirtualAmount:
+            return QVariant(nAnonymizeVirtualAmount);
         default:
             return QVariant();
         }
@@ -308,10 +308,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit darksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeStipendAmount:
-            nAnonymizeStipendAmount = value.toInt();
-            settings.setValue("nAnonymizeStipendAmount", nAnonymizeStipendAmount);
-            emit AnonymizeStipendAmountChanged(nAnonymizeStipendAmount);
+        case AnonymizeVirtualAmount:
+            nAnonymizeVirtualAmount = value.toInt();
+            settings.setValue("nAnonymizeVirtualAmount", nAnonymizeVirtualAmount);
+            emit AnonymizeVirtualAmountChanged(nAnonymizeVirtualAmount);
             break;
         default:
             break;
