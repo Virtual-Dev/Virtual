@@ -23,7 +23,6 @@ class CValidationState;
 
 static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
 static const int64_t DARKSEND_POOL_MAX = (24999.99*COIN);
-static const int64_t TARGET_SPACING_FORK = 90;
 static const int64_t TARGET_SPACING = 90;
 
 #define INSTANTX_SIGNATURES_REQUIRED           10
@@ -68,9 +67,7 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 static const int64_t DRIFT = 45;
 inline int64_t FutureDrift(int64_t nTime, int nHeight) {
-    if (nHeight >= 225000) {
-        return nTime + DRIFT;
-    }
+    return nTime + DRIFT;
 }
 
 /** "reject" message codes **/
