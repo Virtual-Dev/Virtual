@@ -123,7 +123,6 @@ public:
 
         nPoolMaxTransactions = 3;
         strDarksendPoolDummyAddress = "hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC";
-        nPOSStartBlock = 1500;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }

@@ -2835,9 +2835,6 @@ bool CBlock::AcceptBlock()
         hashProof = GetPoWHash();
     }
 
-    if (IsProofOfStake() && nHeight < Params().POSStartBlock())
-        return DoS(100, error("AcceptBlock() : reject proof-of-stake at height <= %d", nHeight));
-
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight) && IsProofOfStake())
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
