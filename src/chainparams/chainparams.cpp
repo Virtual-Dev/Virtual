@@ -123,8 +123,6 @@ public:
 
         nPoolMaxTransactions = 3;
         strDarksendPoolDummyAddress = "hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC";
-
-        nLastPOWBlock = 210000;
         nPOSStartBlock = 1500;
     }
 
@@ -183,9 +181,8 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x98)(0x72)(0x42)(0xE2).convert_to_container<std::vector<unsigned char> >();
 
         convertSeeds(vFixedSeeds, pnTestnetSeed, ARRAYLEN(pnTestnetSeed), nDefaultPort);
-
-        nLastPOWBlock = 210000;
     }
+
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
 };
 static CTestNetParams testNetParams;
