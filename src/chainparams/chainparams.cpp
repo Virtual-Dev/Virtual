@@ -74,11 +74,11 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xa3;
-        pchMessageStart[1] = 0xfb;
-        pchMessageStart[2] = 0xdb;
-        pchMessageStart[3] = 0xdb;
-        vAlertPubKey = ParseHex("7501131e64effceb1644efc56ed3594ef64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
+        pchMessageStart[0] = 0xb4;
+        pchMessageStart[1] = 0xa3;
+        pchMessageStart[2] = 0xc8;
+        pchMessageStart[3] = 0xf3;
+        vAlertPubKey = ParseHex("75011316ceeffceb1644efc56ed3594ef64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
         nDefaultPort = 34876;
         nRPCPort = 34877;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16); // starting difficulty is 1 / 2^12
@@ -151,12 +151,12 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xc4;
-        pchMessageStart[1] = 0xd5;
-        pchMessageStart[2] = 0xa6;
-        pchMessageStart[3] = 0xb8;
+        pchMessageStart[0] = 0xb9;
+        pchMessageStart[1] = 0xc3;
+        pchMessageStart[2] = 0xd7;
+        pchMessageStart[3] = 0xda;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
-        vAlertPubKey = ParseHex("7501131e15af76eb1d0e4a656ed3594ef64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
+        vAlertPubKey = ParseHex("7501131e15af76eb1d0e4a656ed35943d64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
         nDefaultPort = 44876;
         nRPCPort = 44877;
         strDataDir = "testnet";
