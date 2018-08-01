@@ -22,9 +22,7 @@ class CValidationState;
 #define START_MASTERNODE_PAYMENTS 1234567890
 
 static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
-static const int64_t DARKSEND_POOL_MAX = (9999.99*COIN);
-
-static const int64_t STATIC_POS_REWARD = 10 * CENT; //Constant POS reward of 10%
+static const int64_t DARKSEND_POOL_MAX = (24999.99*COIN);
 static const int64_t TARGET_SPACING_FORK = 90;
 static const int64_t TARGET_SPACING = 90;
 
@@ -70,19 +68,10 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 inline bool IsProtocolV3(int nHeight) { return TestNet() || nHeight > 205000; }
 
-static const int64_t DRIFT = 600;
-static const int64_t DRIFT_FORK = 120;
-static const int64_t DRIFT_FORK_2 = 45;
-
+static const int64_t DRIFT = 45;
 inline int64_t FutureDrift(int64_t nTime, int nHeight) {
     if (nHeight >= 225000) {
-        return nTime + DRIFT_FORK_2;
-    } else {
-        if (nHeight >= 205000) {
-            return nTime + DRIFT_FORK;
-        } else {
-            return nTime + DRIFT;
-        }
+        return nTime + DRIFT;
     }
 }
 
@@ -1066,13 +1055,7 @@ public:
     int64_t GetPastTimeLimit() const
     {
         if (nHeight >= 225000) {
-            return GetBlockTime() - DRIFT_FORK_2;
-        } else {
-            if (nHeight >= 205000) {
-                return GetBlockTime() - DRIFT_FORK;
-            } else {
-                return GetBlockTime() - DRIFT;
-            }
+            return GetBlockTime() - DRIFT
         }
     }
 
