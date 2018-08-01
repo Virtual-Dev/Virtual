@@ -27,7 +27,7 @@ Welcome to the future!
 *	Maturity: 90 blocks
 *	Difficulty Retargeting: every block
 *	Total Supply: ~19,340,594
-*	Masternode Rewards: 25 SPDs of the POS blocks since block 1500, after block 240,000 60% of the PoS block reward
+*	Masternode Rewards: 25 VIRs of the POS blocks since block 1500, after block 240,000 60% of the PoS block reward
 *	PoS coins maturation: 24 hours
 
 

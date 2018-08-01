@@ -131,10 +131,10 @@ void MultisigInputEntry::on_transactionId_textChanged(const QString &transaction
         {
             CVirtualAddress address(addr);
             QString addressStr(address.ToString().c_str());
-            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" SPD"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" VIR"));
         }
         else
-            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" SPD"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" VIR"));
     }
 }
 

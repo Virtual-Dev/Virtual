@@ -313,7 +313,7 @@ Value decoderawtransaction(const Array& params, bool fHelp)
         ssData >> tx;
     }
     catch (std::exception &e) {
-        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "SPD decode failed");
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "VIR decode failed");
     }
 
     Object result;
@@ -574,7 +574,7 @@ Value sendrawtransaction(const Array& params, bool fHelp)
         ssData >> tx;
     }
     catch (std::exception &e) {
-        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "SPD decode failed");
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "VIR decode failed");
     }
     uint256 hashTx = tx.GetHash();
 
@@ -593,7 +593,7 @@ Value sendrawtransaction(const Array& params, bool fHelp)
     {
         // push to local node
         if (!AcceptToMemoryPool(mempool, tx, true, NULL))
-            throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "SPD rejected");
+            throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "VIR rejected");
     }
     RelayTransaction(tx, hashTx);
 

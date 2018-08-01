@@ -46,7 +46,7 @@ bool CMasternodeConfig::read(boost::filesystem::path path) {
             }
             CBitcoinAddress address(donationAddress);
             if (!address.IsValid()) {
-                LogPrintf("InvalidSPDaddress in masternode.conf line: %s\n", line.c_str());
+                LogPrintf("InvalidVIRaddress in masternode.conf line: %s\n", line.c_str());
                 streamConfig.close();
                 return false;
             }

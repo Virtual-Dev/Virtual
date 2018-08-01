@@ -545,7 +545,7 @@ background-color: #fff;</string>
                        <enum>Qt::ActionsContextMenu</enum>
                       </property>
                       <property name="text">
-                       <string>0.00 SPD</string>
+                       <string>0.00 VIR</string>
                       </property>
                       <property name="textInteractionFlags">
                        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -645,7 +645,7 @@ background-color: #fff;</string>
                        <enum>Qt::ActionsContextMenu</enum>
                       </property>
                       <property name="text">
-                       <string>0.00 SPD</string>
+                       <string>0.00 VIR</string>
                       </property>
                       <property name="textInteractionFlags">
                        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -745,7 +745,7 @@ background-color: #fff;</string>
                        <enum>Qt::ActionsContextMenu</enum>
                       </property>
                       <property name="text">
-                       <string>0.00 SPD</string>
+                       <string>0.00 VIR</string>
                       </property>
                       <property name="textInteractionFlags">
                        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -784,7 +784,7 @@ background-color: #fff;</string>
                        <enum>Qt::ActionsContextMenu</enum>
                       </property>
                       <property name="text">
-                       <string>0.00 SPD</string>
+                       <string>0.00 VIR</string>
                       </property>
                       <property name="textInteractionFlags">
                        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -903,7 +903,7 @@ background-color: #fff;</string>
                   <string notr="true">background-color: #fff</string>
                  </property>
                  <property name="text">
-                  <string>0 SPD</string>
+                  <string>0 VIR</string>
                  </property>
                 </widget>
                </item>
@@ -1148,7 +1148,7 @@ background-color: #fff;</string>
                   <string notr="true">background-color: #fff</string>
                  </property>
                  <property name="text">
-                  <string>123.456 SPD</string>
+                  <string>123.456 VIR</string>
                  </property>
                 </widget>
                </item>
