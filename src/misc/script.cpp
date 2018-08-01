@@ -2123,53 +2123,6 @@ bool SignSignature(const CKeyStore &keystore, const CTransaction& txFrom, CTrans
     return SignSignature(keystore, txout.scriptPubKey, txTo, nIn, nHashType);
 }
 
-struct BlacklistEntry {
-    uint32_t begin;
-    uint32_t end;
-    const char *name;
-};
-
-static struct BlacklistEntry BlacklistedPrefixes[] = {
-	 {0x8C26E281, 0x8C26E281, "VIR1"},
-	 {0xCAB06119, 0xCAB06119, "VIR2"},
-	 {0xA7DEDBB0, 0xA7DEDBB0, "VIR3"},
-	 {0xD74FED0D, 0xD74FED0D, "VIR4"},
-	 {0x6E1A3C23, 0x6E1A3C23, "VIR5"},
-	 {0x283A4302, 0x283A4302, "VIR6"},
-	 {0x99015DDA, 0x99015DDA, "VIR7"},
-   {0x72152D70, 0x72152D70, "VIR8"},
-   {0xEB3A5929, 0xEB3A5929, "VIR9"},
-   {0x0D19320B, 0x0D19320B, "VIR10"},
-   {0xAE525317, 0xAE525317, "VIR11"},
-   {0xB28A6512, 0xB28A6512, "VIR12"},
-   {0xA7E71056, 0xA7E71056, "VIR13"},
-   {0x7B88CD19, 0x7B88CD19, "VIR14"}
-};
-
-bool fIsBareMultisigStd = false;
-
-const char *CScript::IsBlacklisted() const
-{
-    if (this->size() >= 7 && this->at(0) == OP_DUP) {
-        // pay-to-pubkeyhash
-        uint32_t pfx = ntohl(*(uint32_t*)&this->data()[3]);
-        unsigned i;
-
-        for (i = 0; i < (sizeof(BlacklistedPrefixes) / sizeof(BlacklistedPrefixes[0])); ++i)
-            if (pfx >= BlacklistedPrefixes[i].begin && pfx <= BlacklistedPrefixes[i].end)
-                return BlacklistedPrefixes[i].name;
-    }
-    else if (!fIsBareMultisigStd) {
-        txnouttype type;
-        vector<vector<unsigned char> > vSolutions;
-        Solver(*this, type, vSolutions);
-        if (type == TX_MULTISIG)
-            return "bare multisig";
-    }
-
-    return NULL;
-}
-
 // Valid signature cache, to avoid doing expensive ECDSA signature checking
 // twice for every transaction (once when accepted into memory pool, and
 // again when accepted into the block chain)
