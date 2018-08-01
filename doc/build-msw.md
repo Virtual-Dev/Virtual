@@ -18,7 +18,7 @@ Example of Configuration file
 
 	rpcuser=virtuald
 	rpcpassword=vejktejklungwerklcgerkum
-	rpcport=46979
+	rpcport=34877
 	rpcallowip=127.0.0.1
 	listen=1
 	server=1

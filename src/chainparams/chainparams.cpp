@@ -81,7 +81,7 @@ static void getHardcodedSeeds(std::vector<CAddress> &vSeedsOut)
     const int64_t oneWeek = 7 * 24 * 60 * 60;
     for (size_t i = 0; i < ips.size(); ++i)
     {
-        CAddress addr(CService(ips[i], 46978));
+        CAddress addr(CService(ips[i], 34876));
         addr.nTime = GetTime() - GetRand(oneWeek) - oneWeek;
         vSeedsOut.push_back(addr);
     }
@@ -98,8 +98,8 @@ public:
         pchMessageStart[2] = 0xdb;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("7501131e64effceb1644efc56ed3594ef64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
-        nDefaultPort = 46978;
-        nRPCPort = 46979;
+        nDefaultPort = 34876;
+        nRPCPort = 34877;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16); // starting difficulty is 1 / 2^12
 
         const char* pszTimestamp = "Update this at the day of deployment";
@@ -197,8 +197,8 @@ public:
         pchMessageStart[3] = 0xb8;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("7501131e15af76eb1d0e4a656ed3594ef64425850aa52617506177cf245575f0aa11e5b1777cfd8621ea39a7996872a07631ea25b3fdda00df37f5e982fe58850a");
-        nDefaultPort = 59432;
-        nRPCPort = 59433;
+        nDefaultPort = 44876;
+        nRPCPort = 44877;
         strDataDir = "testnet";
         genesis.nTime    = 1518016375;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();

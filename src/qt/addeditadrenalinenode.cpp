@@ -49,7 +49,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->addressLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter an ip address and port. (123.45.67.89:46978)");
+        msg.setText("Please enter an ip address and port. (123.45.67.89:34876)");
         msg.exec();
         return;
     }
